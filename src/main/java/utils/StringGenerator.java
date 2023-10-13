@@ -1,6 +1,4 @@
 package utils;
-
-
 public class StringGenerator
 {
         public static void StringDegenerator(int a){
@@ -20,24 +18,25 @@ public class StringGenerator
                         b = (int) Math.round(Math.random() * 100) % 9 + 1;
                         otv3 += Num[b];
                         a -= 1;
-                        for (int i = 0; i < a; i++) {
+                        for (int i = 0; i < a; i++)
+                        {
                                 b = (int) Math.round(Math.random() * 100) % 33;
                                 otv += RusS[b];
                                 b = (int) Math.round(Math.random() * 100) % 26;
                                 otv2 += EngS[b];
                                 b = (int) Math.round(Math.random() * 100) % 10;
                                 otv3 += Num[b];
-
-
                         }
                         String num1=""; String num2=""; String num3=""; String num4="";
-                        for (int i = 0; i < 3; i++) {
+                        for (int i = 0; i < 3; i++)
+                        {
                                 b = (int) Math.round(Math.random() * 100) % 10;
                                 num1 += Num[b];
                                 b = (int) Math.round(Math.random() * 100) % 10;
                                 num2 += Num[b];
                         }
-                        for (int i = 0; i < 2; i++) {
+                        for (int i = 0; i < 2; i++)
+                        {
                                 b = (int) Math.round(Math.random() * 100) % 10;
                                 num3 += Num[b];
                                 b = (int) Math.round(Math.random() * 100) % 10;
@@ -55,5 +54,3 @@ public class StringGenerator
                 }
         }
 }
-
-
