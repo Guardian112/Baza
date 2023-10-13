@@ -4,9 +4,7 @@ import Models.User;
 import java.util.ArrayList;
 import java.util.List;
 import utils.StringGenerator;
-
 import static utils.StringGenerator.StringDegenerator;
-
 public class Main
 {
     public static List<User> userList = new ArrayList<>();
@@ -47,21 +45,17 @@ public class Main
         user9.gender = 1;
         user.setName("a");
         user.setAge(78);
-       // System.out.println(userList.size());
-      //  System.out.println(userList.get(0).toString());
-
+       /*System.out.println(userList.size());
+        System.out.println(userList.get(0).toString());*/
         for(int i = 0;i<10;i++)
         {
             if(userList.get(i).gender == 1){Listm.add(userList.get(i));} else{Listf.add(userList.get(i));}
         }
-        //System.out.println(Listm.size());
-        //System.out.println(Listf.size());
-
-
+        /*System.out.println(Listm.size());
+        System.out.println(Listf.size());*/
         System.out.println("ВВедите кол-во символов:");
         Scanner in = new Scanner(System.in);
         int kolvo = in.nextInt();
-
         StringDegenerator(kolvo);
     }
 }
